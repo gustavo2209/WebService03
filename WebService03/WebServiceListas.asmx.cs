@@ -30,5 +30,19 @@ namespace WebService03
 
             return list;
         }
+
+        [WebMethod]
+        public List<object[]> ListaDeArreglos()
+        {
+            List<object[]> list = new List<object[]>();
+
+            list.Add(new object[] { 1, "aaa", 13.6 });
+            list.Add(new object[] { 2, "bbb", 14.2 });
+            list.Add(new object[] { 3, "ccc", 11.9 });
+            list.Add(new object[] { 4, "ddd", 18.6 });
+            list.Add(new object[] { 5, "eee", 15.5 });
+
+            return list;
+        }
     }
 }
